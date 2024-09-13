@@ -1,46 +1,415 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neha Tirunagiri-Portfolio</title>
+
+  <!-- Custom CSS link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- Google Font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <h1>Neha</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <main>
+    <!-- Sidebar -->
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <img src="./assets/images/avatar-2.png" alt="Neha Tirunagiri" width="80">
+        </figure>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>This is a section about your background, skills, and hobbies.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Title</h3>
-            <p>Description of the project.</p>
+        <div class="info-content">
+          <h1 class="name" title="Neha Tirunagiri">Neha Tirunagiri</h1>
+          <p class="title">Computer Science Student</p>
         </div>
-        <!-- Repeat for other projects -->
-    </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: your.email@example.com</p>
-    </section>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
 
-    <footer>
-        <p>© 2024 Your Name. All rights reserved.</p>
-    </footer>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:neha2004@iastate.edu" class="contact-link">neha2004@iastate.edu</a>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+              <time datetime="2004-10-28">October 28, 2004</time>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Ames, Iowa, USA</address>
+            </div>
+          </li>
+        </ul>
 
-    <script src="script.js"></script>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://github.com/NehaTiru" class="social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.linkedin.com/in/neha-tirunagiri" class="social-link" target="_blank" rel="noopener noreferrer">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <div class="main-content">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <button class="navbar-link active" data-nav-link>About</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Education</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skills</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Projects</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Experience</button>
+          </li>
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Leadership</button>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- About -->
+<article class="about" data-page="about">
+  <header>
+    <h2 class="h2 article-title">About</h2>
+  </header>
+  <section class="about-text">
+    <p>
+      I'm Neha Tirunagiri, a passionate Computer Science student at Iowa State University with a minor in Data Science and Artificial Intelligence. I thrive on tackling complex challenges through software development and data-driven solutions. I have experience spanning both frontend and backend development; I've worked on numerous projects that have honed my skills in Python, Java, JavaScript, and R. I'm eager to apply my skills in a real-world environment, particularly in software development roles that push the boundaries of innovation and user experience.
+    </p>
+  </section>
+  
+  </section>
+</article>
+
+
+<!-- Education -->
+<article class="about" data-page="education">
+  <header>
+    <h2 class="h2 article-title">Education</h2>
+  </header>
+  <section class="about-text">
+    <!-- Iowa State University -->
+    <div class="education-item">
+      <figure class="education-logo">
+        <!-- Correct image path and extension -->
+        <img src="./assets/images/Iowa State.png" alt="Iowa State University" width="200">
+      </figure>
+      <div class="education-content">
+        <h3><a href="https://www.iastate.edu" target="_blank">Iowa State University</a></h3>
+        <p>Bachelor of Science - BS, Computer Science and Data Science</p>
+        <p>Aug 2022 - Aug 2026</p>
+      </div>
+    </div>
+
+    <!-- SBOA School & Junior College -->
+    <div class="education-item">
+      <figure class="education-logo">
+        <!-- Correct image path and extension -->
+        <img src="./assets/images/sboa school.png" alt="SBOA School & Junior College" width="200">
+      </figure>
+      <div class="education-content">
+        <h3><a href="https://sboajc.org/" target="_blank">SBOA School & Junior College</a></h3>
+        <p>High School Diploma</p>
+        <p>Apr 2013 - May 2022</p>
+      </div>
+    </div>
+  </section>
+</article>
+
+
+
+<!-- Skills -->
+<article class="skills" data-page="skills">
+  <header>
+    <h2 class="h2 article-title">Skills</h2>
+  </header>
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="book-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Skill Set & Knowledge</h3>
+    </div>
+    <ol class="timeline-list">
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">HTML</h4>
+        <p class="timeline-text">The standard markup language for creating and structuring web pages.</p>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">CSS</h4>
+        <p class="timeline-text">A stylesheet language used for designing the layout and appearance of web pages.</p>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">JavaScript</h4>
+        <p class="timeline-text">A programming language for adding interactivity and dynamic content to web pages.</p>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Python</h4>
+        <p class="timeline-text">A versatile, high-level language popular for web development, data science, and automation.</p>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Java</h4>
+        <p class="timeline-text">A powerful, platform-independent language used for building enterprise and Android applications.</p>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">SQL</h4>
+        <p class="timeline-text">A language for managing and querying data in relational databases.</p>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">React</h4>
+        <p class="timeline-text">A JavaScript library for building fast, interactive user interfaces for web applications.</p>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Node.js</h4>
+        <p class="timeline-text">A JavaScript runtime for server-side development, known for its scalability and non-blocking architecture.</p>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Spring Boot</h4>
+        <p class="timeline-text">A Java-based framework that simplifies the creation of production-ready applications and microservices.</p>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Android Studio</h4>
+        <p class="timeline-text">The official IDE for Android development, offering tools for designing, coding, and testing mobile apps.</p>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Git</h4>
+        <p class="timeline-text">A version control system for tracking changes in code and facilitating collaboration among developers.</p>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">GitHub</h4>
+        <p class="timeline-text">A platform for hosting Git repositories, enabling version control, code review, and collaboration.</p>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">MySQL</h4>
+        <p class="timeline-text">An open-source relational database management system widely used for web applications.</p>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">MongoDB</h4>
+        <p class="timeline-text">A NoSQL database that stores data in flexible, JSON-like documents for scalable applications.</p>
+      </li>
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">R</h4>
+        <p class="timeline-text">A programming language specialized in statistical computing, data analysis, and visualization.</p>
+      </li>
+    </ol>
+  </section>
+</article>
+
+
+      <!-- Projects -->
+      <article class="portfolio" data-page="projects">
+        <header>
+          <h2 class="h2 article-title">Projects</h2>
+        </header>
+        <section class="projects">
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="#">
+                <figure class="project-img small-img">
+                  <!-- Removed the project-item-icon-box div containing the eye icon -->
+                  <img src="./assets/images/Myiphone.png" alt="My iPhone" loading="lazy">
+                </figure>
+                <h3 class="project-title">My iPhone</h3>
+                <ul class="project-details"> <!-- Added unordered list for bullet points -->
+                  <li>Full-Stack Web & Windows Application</li>
+                  <li>Developed a comprehensive e-commerce web application focused on iPhones utilizing HTML, CSS, and React for sleek and intuitive UI/UX design.</li>
+                </ul>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="mobile development">
+              <a href="#">
+                <figure class="project-img small-img">
+                  <!-- Removed the project-item-icon-box div containing the eye icon -->
+                  <img src="./assets/images/Cyclone.png" alt="Cyclone Connect" loading="lazy">
+                </figure>
+                <h3 class="project-title">Cyclone Connect</h3>
+                <ul class="project-details"> <!-- Added unordered list for bullet points -->
+                  <li>Mobile Application Software Development</li>
+                  <li>Developed a campus management app designed to help students navigate their academic journey and make informed decisions about their courses and majors.</li>
+                </ul>
+              </a>
+            </li>
+          </ul>
+          <p class="more-projects">
+            For more personal projects, see my <a href="https://github.com/NehaTiru" target="_blank">GitHub</a>
+          </p>
+        </section>
+      </article>
+
+
+      <!-- Experience -->
+<article class="experience" data-page="experience">
+  <header>
+    <h2 class="h2 article-title">Experience</h2>
+  </header>
+  
+  <!-- Work Experience -->
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="briefcase-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Work Experience</h3>
+    </div>
+    
+    <ol class="experience-list">
+      <!-- Experience 1 -->
+      <li class="experience-item">
+        <h4 class="h4 experience-item-title">Computing Support Technician</h4>
+        <span>Iowa State University Department of Electrical and Computer Engineering</span>
+        <p class="experience-text">Specialized in troubleshooting computing and electronic issues, managing resources, guiding projects, and getting trained on new technologies.</p>
+      </li>
+
+      <!-- Experience 2 -->
+      <li class="experience-item">
+        <h4 class="h4 experience-item-title">Data Research Analyst Internship</h4>
+        <span>Kingland</span>
+        <p class="experience-text">Provided data maintenance and cleansing for capital markets and large banking firms through internet-based research.</p>
+      </li>
+
+      <!-- Experience 3 -->
+      <li class="experience-item">
+        <h4 class="h4 experience-item-title">Mathematics Tutor</h4>
+        <span>Iowa State University</span>
+        <p class="experience-text">Helped peers excel academically by providing guidance and support in various subjects, enhancing personal knowledge and communication skills.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- Internship Experience -->
+  <section class="timeline">
+    <div class="title-wrapper">
+      <div class="icon-box">
+        <ion-icon name="school-outline"></ion-icon>
+      </div>
+      <h3 class="h3">Internship Experience</h3>
+    </div>
+    
+    <ol class="timeline-list">
+      <li class="timeline-item">
+        <h4 class="h4 timeline-item-title">Research Intern, Housing & AI Project</h4>
+        <p>Iowa State University Extension and Outreach.</p>
+        <p>Developed an AI-powered chatbot to provide housing insights, storing all documents in SQL and training an LLM to generate interactive maps with Folium and conduct advanced data analysis.</p>
+        <p><a href="https://www.youtube.com/watch?v=jyJ_YoebbUw" target="_blank" class="experience-link">Watch the Project Overview Video</a></p>
+      </li>
+    </ol>
+  </section>
+</article>
+
+  
+
+      
+      
+
+
+      <!-- Leadership & Involvement -->
+      <article class="leadership" data-page="leadership">
+        <header>
+          <h2 class="h2 article-title">Leadership & Involvement</h2>
+        </header>
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+            <h3 class="h3">Leadership Roles & Membership</h3>
+          </div>
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Data Science Club Member</h4>
+              <p>Active member contributing to data analysis projects and club events.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">DIS (Destination Iowa State) Team Leader</h4>
+              <p>Led a team to guide new students during orientation and help them integrate into campus life.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">GDSC Club (Google Developer Student Club) Tech Team Member</h4>
+              <p>Part of the tech team, responsible for organizing workshops and tech talks.</p>
+            </li>
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">WISE (Women in Lead Conference) Member</h4>
+              <p>Participated in various events and conferences to promote leadership among women in tech.</p>
+            </li>
+          </ol>
+        </section>
+      </article>
+      
+
+  <!-- Ionicons link -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- JavaScript code for navigation functionality -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const navLinks = document.querySelectorAll('.navbar-link');
+      const pages = document.querySelectorAll('.about, .skills, .portfolio, .experience, .leadership'); // Include all sections
+
+      navLinks.forEach((link) => {
+        link.addEventListener('click', function () {
+          // Remove active class from all nav links
+          navLinks.forEach((nav) => nav.classList.remove('active'));
+          // Add active class to the clicked nav link
+          this.classList.add('active');
+
+          // Remove active class from all pages
+          pages.forEach((page) => page.classList.remove('active'));
+          // Add active class to the target page
+          const targetPage = this.textContent.trim().toLowerCase(); // Get the lowercased text of clicked link
+          const activePage = document.querySelector(`[data-page="${targetPage}"]`);
+          if (activePage) {
+            activePage.classList.add('active');
+          }
+        });
+      });
+    });
+  </script>
 </body>
+
 </html>
+
